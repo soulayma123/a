@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glow Beauty</title>
+  <style>
+    /* ========== Base Styles ========== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffafc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      font-weight: 600;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* ========== Container ========== */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* ========== Banner ========== */
+    .banner {
+      background: linear-gradient(to right, #f78fb3, #f8a5c2);
+      color: white;
+      padding: 3rem;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+    }
+
+    .banner h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .banner p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    /* ========== Button ========== */
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: white;
+      color: #f78fb3;
+      font-weight: bold;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ffe3ec;
+    }
+
+    /* ========== Card Grid ========== */
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 1rem;
+      max-width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      color: #f78fb3;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ========== Avatar ========== */
+    .avatar {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: #ffe3ec;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      margin-top: 3rem;
+    }
+
+    .avatar img {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+    }
+
+    /* ========== Responsive ========== */
+    @media (max-width: 768px) {
+      .card-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Banner -->
+    <div class="banner">
+      <h1>Glow Beauty</h1>
+      <p>Natural cosmetics for radiant skin.</p>
+      <a href="#" class="btn">Shop Now</a>
+    </div>
+
+    <!-- Product Section -->
+    <h2 style="text-align:center; margin-top: 2rem;">Our Bestsellers</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Lip Balm">
+        <h3>Hydrating Lip Balm</h3>
+        <p>Moisturize and protect with organic ingredients.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Face Cream">
+        <h3>Glow Face Cream</h3>
+        <p>Brighten your skin with vitamin C infusion.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Serum">
+        <h3>Night Repair Serum</h3>
+        <p>Rejuvenate your skin while you sleep.</p>
+      </div>
+    </div>
+
+    <!-- Testimonial -->
+    <div class="avatar">
+      <img src="https://via.placeholder.com/100" alt="Customer">
+      <p>“These products changed my skin! – Sarah M.”</p>
+    </div>
+  </div>
+
+</body>
+</html>
